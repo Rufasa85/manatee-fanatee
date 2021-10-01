@@ -3,7 +3,7 @@ console.log("hello")
 var jokeBtn = $('#joke-btn');
 
 function renderRandomJoke() {
-    fetch('http://manateejokesapi.herokuapp.com/manatees/random')
+    fetch('https://manateejokesapi.herokuapp.com/manatees/random')
         .then(function (response) {
             response.json().then(function (data) {
                 $('#joke-holder').removeClass("hidden");
